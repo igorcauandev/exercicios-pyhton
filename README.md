@@ -1,2 +1,2 @@
-# Exercícios Pyhton - Racicínio Matemático
+# Exercícios Pyhton - Raciocínio Matemático
 Exercicios feito em sala de aula com foco em aprendizado e raciocinio matematico utilizando Python.
