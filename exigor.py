@@ -120,9 +120,9 @@ invertida = s[::-1]
 pares = s[0::2]
 impares = s[1::2]
 
-print(invertida)
-print(pares)
-print(impares)
+print("A palavra invertida e: ", invertida)
+print("Os caracteres pares sao: ", pares)
+print("Os caracteres impares sao: ", impares)
 
 # ------ 14 / Décimo Quarto Exercício ------
 v = float(input("Digite a velocidade em km/h: "))
