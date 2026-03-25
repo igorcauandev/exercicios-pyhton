@@ -12,7 +12,14 @@ print(type(s))
 print(len(s))
 
 # ------ 3 / Terceiro Exercício ------
+n = int(input("Digite o número de itens: "))
+k = int(input("Digite o número de pessoas: "))
 
+itens_por_pessoa = n // k
+resto = n % k
+
+print("Cada pessoa recebe:", itens_por_pessoa)
+print("Sobram:", resto)
 
 # ------ 4 / Quarto Exercício ------
 base = float(input("Digite a base do retângulo: "))
@@ -79,3 +86,60 @@ notaponderada = ((n1 * p1) + (n2 * p2) + (n3 * p3)) / (p1 + p2 + p3)
 print("Sua nota ponderada e:", notaponderada)
 
 # ------ 10 / Décimo Exercício ------
+x = int(input("Digite o primeiro numero: "))
+z = int(input("Digite o segundo numero: "))
+
+print(x, z)
+
+x, z = z, x
+
+print(x, z)
+
+# ------ 11 / Décimo Primeiro Exercício ------
+nome = input("Digite seu nome completo: ")
+
+print(len(nome))
+print(nome.upper())
+
+# ------ 12 / Décimo Segundo Exercício ------
+s = input("Digite uma frase: (No mínimo 6 caracteres)")
+
+if len(s) < 6:
+    print("Precisa ser maior ou igual a 6 caracteres!!")
+else:
+    print("O primeiro caracter: ", s[0])
+    print("O tres primeiros caracter: ", s[:3])
+    print("O tres ultimos caracter: ", s[-3:])
+    print("O texto sem o primeiro caracter: ", s[1:])
+    print("O texto sem o ultimo caracter: ", s[:-1])
+
+# ------ 13 / Décimo Terceiro Exercício ------
+s = input("Digite a sua palavra: ")
+
+invertida = s[::-1]
+pares = s[0::2]
+impares = s[1::2]
+
+print(invertida)
+print(pares)
+print(impares)
+
+# ------ 14 / Décimo Quarto Exercício ------
+v = float(input("Digite a velocidade em km/h: "))
+t = float(input("Digite o tempo em horas: "))
+
+distancia = v * t
+
+print("A distancia percorrida em km e: ", distancia)
+print("A distancia percorrida em metros e: ", distancia * 1000)
+
+# ------ 15 / Décimo Quinto Exercício (Desafio) ------
+a, b = map(int, input("Digite dois números separados por espaço: ").split())
+
+soma = a + b
+produto = a * b
+diferenca = a - b
+
+print("A Soma e: ", soma)
+print("O Produto e: ", produto)
+print("A Diferença e: ", diferenca)
